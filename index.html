@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Page</h1>
+            <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+        </header>
+
+        <!-- Interactive Element 1: Counter Game -->
+        <section class="interactive-section">
+            <h2>Counter Game</h2>
+            <div class="counter-container">
+                <button id="decreaseBtn">-</button>
+                <span id="counterValue">0</span>
+                <button id="increaseBtn">+</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </section>
+
+        <!-- Interactive Element 2: FAQ Section -->
+        <section class="interactive-section">
+            <h2>FAQ Section</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What is JavaScript?</button>
+                    <div class="faq-answer">JavaScript is a programming language that enables interactive web pages.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do event listeners work?</button>
+                    <div class="faq-answer">Event listeners wait for specific events and execute functions when those events occur.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is DOM manipulation?</button>
+                    <div class="faq-answer">DOM manipulation is the process of changing HTML elements using JavaScript.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="form-section">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <button type="submit">Submit</button>
+                <div class="success-message" id="successMessage"></div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
